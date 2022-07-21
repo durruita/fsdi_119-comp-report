@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <img src="./img/logo-transparent.png" height="150" width="150" class="logoImg">
+
+    <div class="mainNav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="login.html">LOGIN</a>
+                    <a href="profile.html">PROFILE</a>
+                    <a href="register.html">REGISTER</a>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+    </div>
+    <form action="" class="form">
+        <div class="top">
+            <h1>Login Form</h1>
+            <br>
+            <a href="login.html" class="active">Login</a>
+            <a href="register.html" class="unactive">Signup</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="data">
+            <input type="text" class="inputs" placeholder="Email Address">
+            <input type="text" class="inputs" placeholder="Password">
+            <br>
+
+            <a href="#" class="forgotpsw">Forgot Password?</a>
+        </div>
+        <br>
+        <br>
+        <div class="submitdiv">
+            <input type="submit" value="Login" class="submitbtn">
+        </div>
+        <br>
+        <br>
+        <div class="footer">
+            <p>Not a member? <a href="register.html" class="signupbtn">Signup now</a></p>
+        </div>
+    </form>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

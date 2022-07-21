@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon Auctions</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="styles/soon.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+    <img src="./img/logo-transparent.png" height="150" width="150" class="logoImg">
+
+    <div class="mainNav">
+        <ul>  
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="cart.html">CART</a></li>
+
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                <div class="overlay-content">
+                    <a href="login.html">LOGIN</a>
+                    <a href="profile.html">PROFILE</a>
+                    <a href="register.html">REGISTER</a>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+    </div>
+
+    <div class="container">
+        <img src="./img/logo-transparent.png" class="logo">
+
+        <div class="content">
+            <p>Auction Is Under Maintenance</p>
+            <h1>We're <span>Launching</span> Soon</h1>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <button type="button">Learn More <img src="./img/triangle.png"></button>
+        </div>
+        <img src="./img/rocket.png" class="rocket">
+    </div> 
+    
+    
+
+<script>
+    var countDownDate = new Date("July 04, 2022 00:00:00:").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance =countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+    },1000);
+</script>    
+</body>
+
+
+</html>

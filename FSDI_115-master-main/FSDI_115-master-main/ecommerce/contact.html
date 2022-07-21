@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CONTACT US</title>
+</head>
+
+<body>
+    <img src="./img/logo-transparent.png" height="150" width="150" class="logoImg">
+
+    <div class="mainNav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                <div class="overlay-content">
+                    <a href="login.html">LOGIN</a>
+                    <a href="profile.html">PROFILE</a>
+                    <a href="register.html">REGISTER</a>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <form action="action_page.php" class="flex-item-left">
+            <h4>Contact Us</h4>
+            <p>Please provide us with your information. We will return your concern shortly.</p>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+        <form class="flex-item-right">
+            <h4>How Can We Help?</h4>
+            <p>Please select a topic below related to your inquiry. If you don't find what you need fill out our contract form.</p>
+            <input type="text" id="sneakersize" placeholder="Sneaker Size:">
+
+            <input type="text" id="returns" placeholder="Returns:">
+
+            <input type="text" id="sales" placeholder="Sales:">
+
+            <label for="partner">Become A Partner</label>
+            <input type="text" id="partner">
+
+            <label for="auction">Auction:</label>
+            <input type="text" id="auction">
+
+            <label for="payments">Payments:</label>
+            <input type="text" id="payments">
+
+            <p>Are you an existing customer?</p>
+            <input type="radio" id="customers">
+            <label for="customers">Yes</label>
+            <input type="radio" id="customers">
+            <label for="customers">No</label><br>
+
+            <input type="submit" value="Submit">
+            
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
